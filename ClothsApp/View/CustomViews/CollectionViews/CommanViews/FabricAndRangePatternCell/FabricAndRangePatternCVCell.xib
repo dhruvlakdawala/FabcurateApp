@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FabricAndRangePatternCVCell" id="gTV-IL-0wX" customClass="FabricAndRangePatternCVCell" customModule="ClothsApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ygd-hb-FNO">
+                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Uz-YX-npw">
+                                <rect key="frame" x="5" y="5" width="140" height="140"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Fabric" translatesAutoresizingMaskIntoConstraints="NO" id="i9g-Ba-yAq">
+                                        <rect key="frame" x="0.0" y="0.0" width="140" height="140"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JAPAN SATIN" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rhh-Nq-08M">
+                                        <rect key="frame" x="30" y="81.666666666666671" width="80" height="38.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="i9g-Ba-yAq" secondAttribute="trailing" id="1jf-d2-Zx0"/>
+                                    <constraint firstAttribute="trailing" secondItem="rhh-Nq-08M" secondAttribute="trailing" constant="30" id="2uj-Px-eLK"/>
+                                    <constraint firstItem="i9g-Ba-yAq" firstAttribute="leading" secondItem="0Uz-YX-npw" secondAttribute="leading" id="E1E-SY-tOj"/>
+                                    <constraint firstAttribute="bottom" secondItem="rhh-Nq-08M" secondAttribute="bottom" constant="20" id="I5h-gy-zcb"/>
+                                    <constraint firstItem="i9g-Ba-yAq" firstAttribute="top" secondItem="0Uz-YX-npw" secondAttribute="top" id="bv2-cJ-0hp"/>
+                                    <constraint firstAttribute="bottom" secondItem="i9g-Ba-yAq" secondAttribute="bottom" id="wRC-qV-rek"/>
+                                    <constraint firstItem="rhh-Nq-08M" firstAttribute="leading" secondItem="0Uz-YX-npw" secondAttribute="leading" constant="30" id="xBG-Uq-EW2"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="0Uz-YX-npw" secondAttribute="trailing" constant="5" id="JFZ-1h-kvf"/>
+                            <constraint firstAttribute="top" secondItem="0Uz-YX-npw" secondAttribute="top" constant="-5" id="Lu0-kM-SlR"/>
+                            <constraint firstAttribute="bottom" secondItem="0Uz-YX-npw" secondAttribute="bottom" constant="5" id="VzW-bA-d5r"/>
+                            <constraint firstItem="0Uz-YX-npw" firstAttribute="leading" secondItem="Ygd-hb-FNO" secondAttribute="leading" constant="5" id="fLO-sp-lUf"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Ygd-hb-FNO" secondAttribute="trailing" id="Ij9-dc-Hg0"/>
+                <constraint firstItem="Ygd-hb-FNO" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="QlU-Bg-EGX"/>
+                <constraint firstAttribute="bottom" secondItem="Ygd-hb-FNO" secondAttribute="bottom" id="dMI-nJ-9PW"/>
+                <constraint firstItem="Ygd-hb-FNO" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="u7l-Oq-B0E"/>
+            </constraints>
+            <connections>
+                <outlet property="imgView" destination="i9g-Ba-yAq" id="uFE-FF-297"/>
+                <outlet property="lblTitle" destination="rhh-Nq-08M" id="xVc-UI-w3x"/>
+                <outlet property="vwMainContainer" destination="0Uz-YX-npw" id="XFO-T0-Tvk"/>
+            </connections>
+            <point key="canvasLocation" x="10.687022900763358" y="-11.267605633802818"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Fabric" width="800" height="1200"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

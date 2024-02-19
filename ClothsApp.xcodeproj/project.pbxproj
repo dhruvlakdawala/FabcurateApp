@@ -1,0 +1,995 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3F127A2A406617E5F0F17EC1 /* Pods_ClothsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CB660F573B90D50FD87651C /* Pods_ClothsApp.framework */; };
+		523A52982B83994500BF78E1 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523A52962B83994400BF78E1 /* NavigationBar.swift */; };
+		523A52992B83994500BF78E1 /* NavigationBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 523A52972B83994400BF78E1 /* NavigationBar.xib */; };
+		5271AF892B7F60B00056EEE2 /* TopRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5271AF882B7F60B00056EEE2 /* TopRepository.swift */; };
+		5271AF8B2B7F60D70056EEE2 /* MiddleRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5271AF8A2B7F60D70056EEE2 /* MiddleRepository.swift */; };
+		5271AF8D2B7F611D0056EEE2 /* BottomRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5271AF8C2B7F611D0056EEE2 /* BottomRepository.swift */; };
+		5271AF8F2B7F61740056EEE2 /* CategoryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5271AF8E2B7F61740056EEE2 /* CategoryRepository.swift */; };
+		5271AF912B7F61B90056EEE2 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5271AF902B7F61B90056EEE2 /* APIManager.swift */; };
+		5271AF9C2B7F8A210056EEE2 /* TitleCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5271AF9A2B7F8A210056EEE2 /* TitleCVCell.swift */; };
+		5271AF9D2B7F8A210056EEE2 /* TitleCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5271AF9B2B7F8A210056EEE2 /* TitleCVCell.xib */; };
+		5271AFA22B7F8A7F0056EEE2 /* SliderImagesCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5271AFA02B7F8A7F0056EEE2 /* SliderImagesCVCell.swift */; };
+		5271AFA32B7F8A7F0056EEE2 /* SliderImagesCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5271AFA12B7F8A7F0056EEE2 /* SliderImagesCVCell.xib */; };
+		5271AFA82B7F8AF20056EEE2 /* CategoryCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5271AFA62B7F8AF20056EEE2 /* CategoryCVCell.swift */; };
+		5271AFA92B7F8AF20056EEE2 /* CategoryCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5271AFA72B7F8AF20056EEE2 /* CategoryCVCell.xib */; };
+		5271AFAD2B7F8B280056EEE2 /* FabricAndRangePatternCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5271AFAB2B7F8B280056EEE2 /* FabricAndRangePatternCVCell.swift */; };
+		5271AFAE2B7F8B280056EEE2 /* FabricAndRangePatternCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5271AFAC2B7F8B280056EEE2 /* FabricAndRangePatternCVCell.xib */; };
+		5271AFB22B7F8B600056EEE2 /* UnstitchedCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5271AFB02B7F8B600056EEE2 /* UnstitchedCVCell.swift */; };
+		5271AFB32B7F8B600056EEE2 /* UnstitchedCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5271AFB12B7F8B600056EEE2 /* UnstitchedCVCell.xib */; };
+		5271AFB72B7F8B880056EEE2 /* BoutiqueCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5271AFB52B7F8B880056EEE2 /* BoutiqueCVCell.swift */; };
+		5271AFB82B7F8B880056EEE2 /* BoutiqueCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5271AFB62B7F8B880056EEE2 /* BoutiqueCVCell.xib */; };
+		5271AFBE2B7F8CC40056EEE2 /* OccassionDesignCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5271AFBC2B7F8CC40056EEE2 /* OccassionDesignCVCell.swift */; };
+		5271AFBF2B7F8CC40056EEE2 /* OccassionDesignCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5271AFBD2B7F8CC40056EEE2 /* OccassionDesignCVCell.xib */; };
+		5271AFC32B7F8D310056EEE2 /* CategoryTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5271AFC12B7F8D310056EEE2 /* CategoryTVCell.swift */; };
+		5271AFC42B7F8D310056EEE2 /* CategoryTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5271AFC22B7F8D310056EEE2 /* CategoryTVCell.xib */; };
+		5271AFCE2B8068D50056EEE2 /* OccassionDesignTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5271AFCC2B8068D50056EEE2 /* OccassionDesignTVCell.swift */; };
+		5271AFCF2B8068D50056EEE2 /* OccassionDesignTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5271AFCD2B8068D50056EEE2 /* OccassionDesignTVCell.xib */; };
+		5271AFD32B8069110056EEE2 /* SliderImageTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5271AFD12B8069110056EEE2 /* SliderImageTVCell.swift */; };
+		5271AFD42B8069110056EEE2 /* SliderImageTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5271AFD22B8069110056EEE2 /* SliderImageTVCell.xib */; };
+		5271AFD82B80693B0056EEE2 /* TitleTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5271AFD62B80693B0056EEE2 /* TitleTVCell.swift */; };
+		5271AFD92B80693B0056EEE2 /* TitleTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5271AFD72B80693B0056EEE2 /* TitleTVCell.xib */; };
+		5271AFDD2B8069830056EEE2 /* RangePatternTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5271AFDB2B8069830056EEE2 /* RangePatternTVCell.swift */; };
+		5271AFDE2B8069830056EEE2 /* RangePatternTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5271AFDC2B8069830056EEE2 /* RangePatternTVCell.xib */; };
+		5271AFE22B8069B50056EEE2 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5271AFE02B8069B50056EEE2 /* CategoryCell.swift */; };
+		5271AFE32B8069B50056EEE2 /* CategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5271AFE12B8069B50056EEE2 /* CategoryCell.xib */; };
+		5271AFE72B8069D80056EEE2 /* FabricTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5271AFE52B8069D80056EEE2 /* FabricTVCell.swift */; };
+		5271AFE82B8069D80056EEE2 /* FabricTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5271AFE62B8069D80056EEE2 /* FabricTVCell.xib */; };
+		5271AFEC2B806A0A0056EEE2 /* UnstitchedTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5271AFEA2B806A0A0056EEE2 /* UnstitchedTVCell.swift */; };
+		5271AFED2B806A0A0056EEE2 /* UnstitchedTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5271AFEB2B806A0A0056EEE2 /* UnstitchedTVCell.xib */; };
+		5271AFF12B806A260056EEE2 /* BoutiqueTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5271AFEF2B806A260056EEE2 /* BoutiqueTVCell.swift */; };
+		5271AFF22B806A260056EEE2 /* BoutiqueTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5271AFF02B806A260056EEE2 /* BoutiqueTVCell.xib */; };
+		5271AFF82B808A2A0056EEE2 /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5271AFF62B808A2A0056EEE2 /* HeaderCell.swift */; };
+		5271AFF92B808A2A0056EEE2 /* HeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5271AFF72B808A2A0056EEE2 /* HeaderCell.xib */; };
+		5271AFFC2B80A82C0056EEE2 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5271AFFB2B80A82C0056EEE2 /* CardView.swift */; };
+		52D840202B81B789003575A5 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D8401F2B81B789003575A5 /* UIColorExtension.swift */; };
+		52D840242B81B9AF003575A5 /* CategoryBottomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52D840222B81B9AF003575A5 /* CategoryBottomCell.xib */; };
+		52D840252B81B9AF003575A5 /* CategoryBottomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D840232B81B9AF003575A5 /* CategoryBottomCell.swift */; };
+		52D840272B81BB15003575A5 /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D840262B81BB15003575A5 /* ArrayExtension.swift */; };
+		52D8404A2B81C64E003575A5 /* FabricBottomTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D840482B81C64E003575A5 /* FabricBottomTVCell.swift */; };
+		52D8404B2B81C64E003575A5 /* FabricBottomTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52D840492B81C64E003575A5 /* FabricBottomTVCell.xib */; };
+		52ED144A2B7F3D5800F0B63A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ED14492B7F3D5800F0B63A /* AppDelegate.swift */; };
+		52ED144C2B7F3D5800F0B63A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ED144B2B7F3D5800F0B63A /* SceneDelegate.swift */; };
+		52ED144E2B7F3D5800F0B63A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ED144D2B7F3D5800F0B63A /* HomeViewController.swift */; };
+		52ED14512B7F3D5800F0B63A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52ED144F2B7F3D5800F0B63A /* Main.storyboard */; };
+		52ED14532B7F3D5A00F0B63A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52ED14522B7F3D5A00F0B63A /* Assets.xcassets */; };
+		52ED14562B7F3D5A00F0B63A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52ED14542B7F3D5A00F0B63A /* LaunchScreen.storyboard */; };
+		52EE0FE32B81D4CC00868ADD /* RangePatternBottomTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EE0FE12B81D4CC00868ADD /* RangePatternBottomTVCell.swift */; };
+		52EE0FE42B81D4CC00868ADD /* RangePatternBottomTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52EE0FE22B81D4CC00868ADD /* RangePatternBottomTVCell.xib */; };
+		52EE0FE82B82345100868ADD /* SubCategoryTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EE0FE62B82345100868ADD /* SubCategoryTVCell.swift */; };
+		52EE0FE92B82345100868ADD /* SubCategoryTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52EE0FE72B82345100868ADD /* SubCategoryTVCell.xib */; };
+		677132822B831EBC00AD682F /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677132812B831EBC00AD682F /* CategoryViewController.swift */; };
+		677132852B8324FB00AD682F /* HeaderExpandCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677132832B8324FB00AD682F /* HeaderExpandCell.swift */; };
+		677132862B8324FB00AD682F /* HeaderExpandCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 677132842B8324FB00AD682F /* HeaderExpandCell.xib */; };
+		677132892B832A4F00AD682F /* ExpandTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677132872B832A4F00AD682F /* ExpandTableCell.swift */; };
+		6771328A2B832A4F00AD682F /* ExpandTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 677132882B832A4F00AD682F /* ExpandTableCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0CB660F573B90D50FD87651C /* Pods_ClothsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClothsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3658A52C458213845C22339E /* Pods-ClothsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClothsApp.release.xcconfig"; path = "Target Support Files/Pods-ClothsApp/Pods-ClothsApp.release.xcconfig"; sourceTree = "<group>"; };
+		523A52962B83994400BF78E1 /* NavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
+		523A52972B83994400BF78E1 /* NavigationBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NavigationBar.xib; sourceTree = "<group>"; };
+		5271AF882B7F60B00056EEE2 /* TopRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopRepository.swift; sourceTree = "<group>"; };
+		5271AF8A2B7F60D70056EEE2 /* MiddleRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiddleRepository.swift; sourceTree = "<group>"; };
+		5271AF8C2B7F611D0056EEE2 /* BottomRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomRepository.swift; sourceTree = "<group>"; };
+		5271AF8E2B7F61740056EEE2 /* CategoryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRepository.swift; sourceTree = "<group>"; };
+		5271AF902B7F61B90056EEE2 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		5271AF9A2B7F8A210056EEE2 /* TitleCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleCVCell.swift; sourceTree = "<group>"; };
+		5271AF9B2B7F8A210056EEE2 /* TitleCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleCVCell.xib; sourceTree = "<group>"; };
+		5271AFA02B7F8A7F0056EEE2 /* SliderImagesCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderImagesCVCell.swift; sourceTree = "<group>"; };
+		5271AFA12B7F8A7F0056EEE2 /* SliderImagesCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SliderImagesCVCell.xib; sourceTree = "<group>"; };
+		5271AFA62B7F8AF20056EEE2 /* CategoryCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCVCell.swift; sourceTree = "<group>"; };
+		5271AFA72B7F8AF20056EEE2 /* CategoryCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCVCell.xib; sourceTree = "<group>"; };
+		5271AFAB2B7F8B280056EEE2 /* FabricAndRangePatternCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FabricAndRangePatternCVCell.swift; sourceTree = "<group>"; };
+		5271AFAC2B7F8B280056EEE2 /* FabricAndRangePatternCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FabricAndRangePatternCVCell.xib; sourceTree = "<group>"; };
+		5271AFB02B7F8B600056EEE2 /* UnstitchedCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnstitchedCVCell.swift; sourceTree = "<group>"; };
+		5271AFB12B7F8B600056EEE2 /* UnstitchedCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UnstitchedCVCell.xib; sourceTree = "<group>"; };
+		5271AFB52B7F8B880056EEE2 /* BoutiqueCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoutiqueCVCell.swift; sourceTree = "<group>"; };
+		5271AFB62B7F8B880056EEE2 /* BoutiqueCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BoutiqueCVCell.xib; sourceTree = "<group>"; };
+		5271AFBC2B7F8CC40056EEE2 /* OccassionDesignCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OccassionDesignCVCell.swift; sourceTree = "<group>"; };
+		5271AFBD2B7F8CC40056EEE2 /* OccassionDesignCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OccassionDesignCVCell.xib; sourceTree = "<group>"; };
+		5271AFC12B7F8D310056EEE2 /* CategoryTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTVCell.swift; sourceTree = "<group>"; };
+		5271AFC22B7F8D310056EEE2 /* CategoryTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryTVCell.xib; sourceTree = "<group>"; };
+		5271AFCC2B8068D50056EEE2 /* OccassionDesignTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OccassionDesignTVCell.swift; sourceTree = "<group>"; };
+		5271AFCD2B8068D50056EEE2 /* OccassionDesignTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OccassionDesignTVCell.xib; sourceTree = "<group>"; };
+		5271AFD12B8069110056EEE2 /* SliderImageTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderImageTVCell.swift; sourceTree = "<group>"; };
+		5271AFD22B8069110056EEE2 /* SliderImageTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SliderImageTVCell.xib; sourceTree = "<group>"; };
+		5271AFD62B80693B0056EEE2 /* TitleTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleTVCell.swift; sourceTree = "<group>"; };
+		5271AFD72B80693B0056EEE2 /* TitleTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleTVCell.xib; sourceTree = "<group>"; };
+		5271AFDB2B8069830056EEE2 /* RangePatternTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RangePatternTVCell.swift; sourceTree = "<group>"; };
+		5271AFDC2B8069830056EEE2 /* RangePatternTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RangePatternTVCell.xib; sourceTree = "<group>"; };
+		5271AFE02B8069B50056EEE2 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		5271AFE12B8069B50056EEE2 /* CategoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCell.xib; sourceTree = "<group>"; };
+		5271AFE52B8069D80056EEE2 /* FabricTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FabricTVCell.swift; sourceTree = "<group>"; };
+		5271AFE62B8069D80056EEE2 /* FabricTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FabricTVCell.xib; sourceTree = "<group>"; };
+		5271AFEA2B806A0A0056EEE2 /* UnstitchedTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnstitchedTVCell.swift; sourceTree = "<group>"; };
+		5271AFEB2B806A0A0056EEE2 /* UnstitchedTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UnstitchedTVCell.xib; sourceTree = "<group>"; };
+		5271AFEF2B806A260056EEE2 /* BoutiqueTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoutiqueTVCell.swift; sourceTree = "<group>"; };
+		5271AFF02B806A260056EEE2 /* BoutiqueTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BoutiqueTVCell.xib; sourceTree = "<group>"; };
+		5271AFF62B808A2A0056EEE2 /* HeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
+		5271AFF72B808A2A0056EEE2 /* HeaderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderCell.xib; sourceTree = "<group>"; };
+		5271AFFB2B80A82C0056EEE2 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		52D8401F2B81B789003575A5 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		52D840222B81B9AF003575A5 /* CategoryBottomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CategoryBottomCell.xib; sourceTree = "<group>"; };
+		52D840232B81B9AF003575A5 /* CategoryBottomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryBottomCell.swift; sourceTree = "<group>"; };
+		52D840262B81BB15003575A5 /* ArrayExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtension.swift; sourceTree = "<group>"; };
+		52D840482B81C64E003575A5 /* FabricBottomTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FabricBottomTVCell.swift; sourceTree = "<group>"; };
+		52D840492B81C64E003575A5 /* FabricBottomTVCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FabricBottomTVCell.xib; sourceTree = "<group>"; };
+		52ED14462B7F3D5800F0B63A /* ClothsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClothsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		52ED14492B7F3D5800F0B63A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		52ED144B2B7F3D5800F0B63A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		52ED144D2B7F3D5800F0B63A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		52ED14502B7F3D5800F0B63A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		52ED14522B7F3D5A00F0B63A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		52ED14552B7F3D5A00F0B63A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		52ED14572B7F3D5A00F0B63A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52EE0FE12B81D4CC00868ADD /* RangePatternBottomTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RangePatternBottomTVCell.swift; sourceTree = "<group>"; };
+		52EE0FE22B81D4CC00868ADD /* RangePatternBottomTVCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RangePatternBottomTVCell.xib; sourceTree = "<group>"; };
+		52EE0FE62B82345100868ADD /* SubCategoryTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubCategoryTVCell.swift; sourceTree = "<group>"; };
+		52EE0FE72B82345100868ADD /* SubCategoryTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubCategoryTVCell.xib; sourceTree = "<group>"; };
+		677132812B831EBC00AD682F /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		677132832B8324FB00AD682F /* HeaderExpandCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderExpandCell.swift; sourceTree = "<group>"; };
+		677132842B8324FB00AD682F /* HeaderExpandCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderExpandCell.xib; sourceTree = "<group>"; };
+		677132872B832A4F00AD682F /* ExpandTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandTableCell.swift; sourceTree = "<group>"; };
+		677132882B832A4F00AD682F /* ExpandTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExpandTableCell.xib; sourceTree = "<group>"; };
+		67BD50CE26B23CE87A5EBA8A /* Pods-ClothsApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClothsApp.debug.xcconfig"; path = "Target Support Files/Pods-ClothsApp/Pods-ClothsApp.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		52ED14432B7F3D5800F0B63A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F127A2A406617E5F0F17EC1 /* Pods_ClothsApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		523A52952B83994400BF78E1 /* CustomNavigation */ = {
+			isa = PBXGroup;
+			children = (
+				523A52962B83994400BF78E1 /* NavigationBar.swift */,
+				523A52972B83994400BF78E1 /* NavigationBar.xib */,
+			);
+			path = CustomNavigation;
+			sourceTree = "<group>";
+		};
+		5271AF872B7F605B0056EEE2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5271AFC62B7F8D870056EEE2 /* APIClass */,
+				5271AF882B7F60B00056EEE2 /* TopRepository.swift */,
+				5271AF8A2B7F60D70056EEE2 /* MiddleRepository.swift */,
+				5271AF8C2B7F611D0056EEE2 /* BottomRepository.swift */,
+				5271AF8E2B7F61740056EEE2 /* CategoryRepository.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5271AF922B7F88EA0056EEE2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				52ED144F2B7F3D5800F0B63A /* Main.storyboard */,
+				52ED144D2B7F3D5800F0B63A /* HomeViewController.swift */,
+				677132812B831EBC00AD682F /* CategoryViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5271AF952B7F89390056EEE2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5271AF992B7F89AF0056EEE2 /* CustomViews */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5271AF962B7F894D0056EEE2 /* TableViews */ = {
+			isa = PBXGroup;
+			children = (
+				52EE0FE52B82341E00868ADD /* SubCategoryCell */,
+				5271AFF52B8089F70056EEE2 /* HeaderViewCell */,
+				5271AFCA2B8068750056EEE2 /* TopRepositoryViews */,
+				5271AFC92B8068570056EEE2 /* MiddleRepositoryViews */,
+				5271AFC82B8068440056EEE2 /* BottomRepositoryViews */,
+				5271AFC02B7F8D080056EEE2 /* CategoryCell */,
+				52E929C72B83518500DC3FEC /* Category */,
+			);
+			path = TableViews;
+			sourceTree = "<group>";
+		};
+		5271AF972B7F89590056EEE2 /* CollectionViews */ = {
+			isa = PBXGroup;
+			children = (
+				5271AFBA2B7F8C860056EEE2 /* BottomRepositoryViews */,
+				5271AFB92B7F8C120056EEE2 /* CommanViews */,
+				5271AFA42B7F8A8A0056EEE2 /* MiddleRepositoryViews */,
+				5271AF982B7F898D0056EEE2 /* TopRepositoryViews */,
+			);
+			path = CollectionViews;
+			sourceTree = "<group>";
+		};
+		5271AF982B7F898D0056EEE2 /* TopRepositoryViews */ = {
+			isa = PBXGroup;
+			children = (
+				5271AF9F2B7F8A4D0056EEE2 /* SliderImagesCell */,
+				5271AF9E2B7F8A3A0056EEE2 /* TitleCell */,
+			);
+			path = TopRepositoryViews;
+			sourceTree = "<group>";
+		};
+		5271AF992B7F89AF0056EEE2 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				523A52952B83994400BF78E1 /* CustomNavigation */,
+				5271AFFA2B80A8170056EEE2 /* CustomUIClass */,
+				5271AF972B7F89590056EEE2 /* CollectionViews */,
+				5271AF962B7F894D0056EEE2 /* TableViews */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		5271AF9E2B7F8A3A0056EEE2 /* TitleCell */ = {
+			isa = PBXGroup;
+			children = (
+				5271AF9A2B7F8A210056EEE2 /* TitleCVCell.swift */,
+				5271AF9B2B7F8A210056EEE2 /* TitleCVCell.xib */,
+			);
+			path = TitleCell;
+			sourceTree = "<group>";
+		};
+		5271AF9F2B7F8A4D0056EEE2 /* SliderImagesCell */ = {
+			isa = PBXGroup;
+			children = (
+				5271AFA02B7F8A7F0056EEE2 /* SliderImagesCVCell.swift */,
+				5271AFA12B7F8A7F0056EEE2 /* SliderImagesCVCell.xib */,
+			);
+			path = SliderImagesCell;
+			sourceTree = "<group>";
+		};
+		5271AFA42B7F8A8A0056EEE2 /* MiddleRepositoryViews */ = {
+			isa = PBXGroup;
+			children = (
+				5271AFB42B7F8B650056EEE2 /* BoutiqueCell */,
+				5271AFAF2B7F8B430056EEE2 /* UnstitchedCell */,
+				5271AFA52B7F8ACB0056EEE2 /* CategoryCell */,
+			);
+			path = MiddleRepositoryViews;
+			sourceTree = "<group>";
+		};
+		5271AFA52B7F8ACB0056EEE2 /* CategoryCell */ = {
+			isa = PBXGroup;
+			children = (
+				5271AFA62B7F8AF20056EEE2 /* CategoryCVCell.swift */,
+				5271AFA72B7F8AF20056EEE2 /* CategoryCVCell.xib */,
+			);
+			path = CategoryCell;
+			sourceTree = "<group>";
+		};
+		5271AFAA2B7F8AFB0056EEE2 /* FabricAndRangePatternCell */ = {
+			isa = PBXGroup;
+			children = (
+				5271AFAB2B7F8B280056EEE2 /* FabricAndRangePatternCVCell.swift */,
+				5271AFAC2B7F8B280056EEE2 /* FabricAndRangePatternCVCell.xib */,
+			);
+			path = FabricAndRangePatternCell;
+			sourceTree = "<group>";
+		};
+		5271AFAF2B7F8B430056EEE2 /* UnstitchedCell */ = {
+			isa = PBXGroup;
+			children = (
+				5271AFB02B7F8B600056EEE2 /* UnstitchedCVCell.swift */,
+				5271AFB12B7F8B600056EEE2 /* UnstitchedCVCell.xib */,
+			);
+			path = UnstitchedCell;
+			sourceTree = "<group>";
+		};
+		5271AFB42B7F8B650056EEE2 /* BoutiqueCell */ = {
+			isa = PBXGroup;
+			children = (
+				5271AFB52B7F8B880056EEE2 /* BoutiqueCVCell.swift */,
+				5271AFB62B7F8B880056EEE2 /* BoutiqueCVCell.xib */,
+			);
+			path = BoutiqueCell;
+			sourceTree = "<group>";
+		};
+		5271AFB92B7F8C120056EEE2 /* CommanViews */ = {
+			isa = PBXGroup;
+			children = (
+				5271AFAA2B7F8AFB0056EEE2 /* FabricAndRangePatternCell */,
+			);
+			path = CommanViews;
+			sourceTree = "<group>";
+		};
+		5271AFBA2B7F8C860056EEE2 /* BottomRepositoryViews */ = {
+			isa = PBXGroup;
+			children = (
+				5271AFBB2B7F8CA20056EEE2 /* OccassionDesignCell */,
+			);
+			path = BottomRepositoryViews;
+			sourceTree = "<group>";
+		};
+		5271AFBB2B7F8CA20056EEE2 /* OccassionDesignCell */ = {
+			isa = PBXGroup;
+			children = (
+				5271AFBC2B7F8CC40056EEE2 /* OccassionDesignCVCell.swift */,
+				5271AFBD2B7F8CC40056EEE2 /* OccassionDesignCVCell.xib */,
+			);
+			path = OccassionDesignCell;
+			sourceTree = "<group>";
+		};
+		5271AFC02B7F8D080056EEE2 /* CategoryCell */ = {
+			isa = PBXGroup;
+			children = (
+				5271AFC12B7F8D310056EEE2 /* CategoryTVCell.swift */,
+				5271AFC22B7F8D310056EEE2 /* CategoryTVCell.xib */,
+			);
+			path = CategoryCell;
+			sourceTree = "<group>";
+		};
+		5271AFC62B7F8D870056EEE2 /* APIClass */ = {
+			isa = PBXGroup;
+			children = (
+				5271AF902B7F61B90056EEE2 /* APIManager.swift */,
+			);
+			path = APIClass;
+			sourceTree = "<group>";
+		};
+		5271AFC72B7F8D960056EEE2 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				52ED14492B7F3D5800F0B63A /* AppDelegate.swift */,
+				52ED144B2B7F3D5800F0B63A /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		5271AFC82B8068440056EEE2 /* BottomRepositoryViews */ = {
+			isa = PBXGroup;
+			children = (
+				52EE0FE02B81D4CC00868ADD /* RangePatternBottomCell */,
+				5271AFDA2B8069690056EEE2 /* RangePatternCell */,
+				5271AFCB2B80688D0056EEE2 /* OccassionDesignCell */,
+			);
+			path = BottomRepositoryViews;
+			sourceTree = "<group>";
+		};
+		5271AFC92B8068570056EEE2 /* MiddleRepositoryViews */ = {
+			isa = PBXGroup;
+			children = (
+				52D840472B81C64E003575A5 /* FabricBottomCell */,
+				52D840212B81B9AF003575A5 /* CategoryBottomCell */,
+				5271AFEE2B806A0F0056EEE2 /* BoutiqueCell */,
+				5271AFE92B8069E50056EEE2 /* UnstitchedCell */,
+				5271AFE42B8069C00056EEE2 /* FabricCell */,
+				5271AFDF2B8069970056EEE2 /* CategoryCell */,
+			);
+			path = MiddleRepositoryViews;
+			sourceTree = "<group>";
+		};
+		5271AFCA2B8068750056EEE2 /* TopRepositoryViews */ = {
+			isa = PBXGroup;
+			children = (
+				5271AFD52B8069190056EEE2 /* TitleCell */,
+				5271AFD02B8068EB0056EEE2 /* SliderImagesCell */,
+			);
+			path = TopRepositoryViews;
+			sourceTree = "<group>";
+		};
+		5271AFCB2B80688D0056EEE2 /* OccassionDesignCell */ = {
+			isa = PBXGroup;
+			children = (
+				5271AFCC2B8068D50056EEE2 /* OccassionDesignTVCell.swift */,
+				5271AFCD2B8068D50056EEE2 /* OccassionDesignTVCell.xib */,
+			);
+			path = OccassionDesignCell;
+			sourceTree = "<group>";
+		};
+		5271AFD02B8068EB0056EEE2 /* SliderImagesCell */ = {
+			isa = PBXGroup;
+			children = (
+				5271AFD12B8069110056EEE2 /* SliderImageTVCell.swift */,
+				5271AFD22B8069110056EEE2 /* SliderImageTVCell.xib */,
+			);
+			path = SliderImagesCell;
+			sourceTree = "<group>";
+		};
+		5271AFD52B8069190056EEE2 /* TitleCell */ = {
+			isa = PBXGroup;
+			children = (
+				5271AFD62B80693B0056EEE2 /* TitleTVCell.swift */,
+				5271AFD72B80693B0056EEE2 /* TitleTVCell.xib */,
+			);
+			path = TitleCell;
+			sourceTree = "<group>";
+		};
+		5271AFDA2B8069690056EEE2 /* RangePatternCell */ = {
+			isa = PBXGroup;
+			children = (
+				5271AFDB2B8069830056EEE2 /* RangePatternTVCell.swift */,
+				5271AFDC2B8069830056EEE2 /* RangePatternTVCell.xib */,
+			);
+			path = RangePatternCell;
+			sourceTree = "<group>";
+		};
+		5271AFDF2B8069970056EEE2 /* CategoryCell */ = {
+			isa = PBXGroup;
+			children = (
+				5271AFE02B8069B50056EEE2 /* CategoryCell.swift */,
+				5271AFE12B8069B50056EEE2 /* CategoryCell.xib */,
+			);
+			path = CategoryCell;
+			sourceTree = "<group>";
+		};
+		5271AFE42B8069C00056EEE2 /* FabricCell */ = {
+			isa = PBXGroup;
+			children = (
+				5271AFE52B8069D80056EEE2 /* FabricTVCell.swift */,
+				5271AFE62B8069D80056EEE2 /* FabricTVCell.xib */,
+			);
+			path = FabricCell;
+			sourceTree = "<group>";
+		};
+		5271AFE92B8069E50056EEE2 /* UnstitchedCell */ = {
+			isa = PBXGroup;
+			children = (
+				5271AFEA2B806A0A0056EEE2 /* UnstitchedTVCell.swift */,
+				5271AFEB2B806A0A0056EEE2 /* UnstitchedTVCell.xib */,
+			);
+			path = UnstitchedCell;
+			sourceTree = "<group>";
+		};
+		5271AFEE2B806A0F0056EEE2 /* BoutiqueCell */ = {
+			isa = PBXGroup;
+			children = (
+				5271AFEF2B806A260056EEE2 /* BoutiqueTVCell.swift */,
+				5271AFF02B806A260056EEE2 /* BoutiqueTVCell.xib */,
+			);
+			path = BoutiqueCell;
+			sourceTree = "<group>";
+		};
+		5271AFF52B8089F70056EEE2 /* HeaderViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				5271AFF62B808A2A0056EEE2 /* HeaderCell.swift */,
+				5271AFF72B808A2A0056EEE2 /* HeaderCell.xib */,
+			);
+			path = HeaderViewCell;
+			sourceTree = "<group>";
+		};
+		5271AFFA2B80A8170056EEE2 /* CustomUIClass */ = {
+			isa = PBXGroup;
+			children = (
+				5271AFFB2B80A82C0056EEE2 /* CardView.swift */,
+			);
+			path = CustomUIClass;
+			sourceTree = "<group>";
+		};
+		52D8401E2B81B768003575A5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				52D8401F2B81B789003575A5 /* UIColorExtension.swift */,
+				52D840262B81BB15003575A5 /* ArrayExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		52D840212B81B9AF003575A5 /* CategoryBottomCell */ = {
+			isa = PBXGroup;
+			children = (
+				52D840222B81B9AF003575A5 /* CategoryBottomCell.xib */,
+				52D840232B81B9AF003575A5 /* CategoryBottomCell.swift */,
+			);
+			path = CategoryBottomCell;
+			sourceTree = "<group>";
+		};
+		52D840472B81C64E003575A5 /* FabricBottomCell */ = {
+			isa = PBXGroup;
+			children = (
+				52D840482B81C64E003575A5 /* FabricBottomTVCell.swift */,
+				52D840492B81C64E003575A5 /* FabricBottomTVCell.xib */,
+			);
+			path = FabricBottomCell;
+			sourceTree = "<group>";
+		};
+		52E929C72B83518500DC3FEC /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				52E929C82B83519900DC3FEC /* HeaderExpandCell */,
+				52E929C92B8351AD00DC3FEC /* ExpandTableCell */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		52E929C82B83519900DC3FEC /* HeaderExpandCell */ = {
+			isa = PBXGroup;
+			children = (
+				677132832B8324FB00AD682F /* HeaderExpandCell.swift */,
+				677132842B8324FB00AD682F /* HeaderExpandCell.xib */,
+			);
+			path = HeaderExpandCell;
+			sourceTree = "<group>";
+		};
+		52E929C92B8351AD00DC3FEC /* ExpandTableCell */ = {
+			isa = PBXGroup;
+			children = (
+				677132872B832A4F00AD682F /* ExpandTableCell.swift */,
+				677132882B832A4F00AD682F /* ExpandTableCell.xib */,
+			);
+			path = ExpandTableCell;
+			sourceTree = "<group>";
+		};
+		52ED143D2B7F3D5800F0B63A = {
+			isa = PBXGroup;
+			children = (
+				52ED14482B7F3D5800F0B63A /* ClothsApp */,
+				52ED14472B7F3D5800F0B63A /* Products */,
+				C00FED5B45FFE6506CC52664 /* Pods */,
+				7D6FA2E39B419222B913675B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		52ED14472B7F3D5800F0B63A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52ED14462B7F3D5800F0B63A /* ClothsApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		52ED14482B7F3D5800F0B63A /* ClothsApp */ = {
+			isa = PBXGroup;
+			children = (
+				52D8401E2B81B768003575A5 /* Extensions */,
+				5271AFC72B7F8D960056EEE2 /* Application */,
+				5271AF872B7F605B0056EEE2 /* Model */,
+				5271AF952B7F89390056EEE2 /* View */,
+				5271AF922B7F88EA0056EEE2 /* Controller */,
+				52ED14522B7F3D5A00F0B63A /* Assets.xcassets */,
+				52ED14542B7F3D5A00F0B63A /* LaunchScreen.storyboard */,
+				52ED14572B7F3D5A00F0B63A /* Info.plist */,
+			);
+			path = ClothsApp;
+			sourceTree = "<group>";
+		};
+		52EE0FE02B81D4CC00868ADD /* RangePatternBottomCell */ = {
+			isa = PBXGroup;
+			children = (
+				52EE0FE12B81D4CC00868ADD /* RangePatternBottomTVCell.swift */,
+				52EE0FE22B81D4CC00868ADD /* RangePatternBottomTVCell.xib */,
+			);
+			path = RangePatternBottomCell;
+			sourceTree = "<group>";
+		};
+		52EE0FE52B82341E00868ADD /* SubCategoryCell */ = {
+			isa = PBXGroup;
+			children = (
+				52EE0FE62B82345100868ADD /* SubCategoryTVCell.swift */,
+				52EE0FE72B82345100868ADD /* SubCategoryTVCell.xib */,
+			);
+			path = SubCategoryCell;
+			sourceTree = "<group>";
+		};
+		7D6FA2E39B419222B913675B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0CB660F573B90D50FD87651C /* Pods_ClothsApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C00FED5B45FFE6506CC52664 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				67BD50CE26B23CE87A5EBA8A /* Pods-ClothsApp.debug.xcconfig */,
+				3658A52C458213845C22339E /* Pods-ClothsApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		52ED14452B7F3D5800F0B63A /* ClothsApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52ED145A2B7F3D5A00F0B63A /* Build configuration list for PBXNativeTarget "ClothsApp" */;
+			buildPhases = (
+				7B4EBE62103FE932722249FD /* [CP] Check Pods Manifest.lock */,
+				52ED14422B7F3D5800F0B63A /* Sources */,
+				52ED14432B7F3D5800F0B63A /* Frameworks */,
+				52ED14442B7F3D5800F0B63A /* Resources */,
+				FE49FAE0624FC5D8AE81CC1D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ClothsApp;
+			productName = ClothsApp;
+			productReference = 52ED14462B7F3D5800F0B63A /* ClothsApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		52ED143E2B7F3D5800F0B63A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					52ED14452B7F3D5800F0B63A = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 52ED14412B7F3D5800F0B63A /* Build configuration list for PBXProject "ClothsApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 52ED143D2B7F3D5800F0B63A;
+			productRefGroup = 52ED14472B7F3D5800F0B63A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				52ED14452B7F3D5800F0B63A /* ClothsApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		52ED14442B7F3D5800F0B63A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				523A52992B83994500BF78E1 /* NavigationBar.xib in Resources */,
+				52EE0FE92B82345100868ADD /* SubCategoryTVCell.xib in Resources */,
+				5271AFF22B806A260056EEE2 /* BoutiqueTVCell.xib in Resources */,
+				6771328A2B832A4F00AD682F /* ExpandTableCell.xib in Resources */,
+				5271AFDE2B8069830056EEE2 /* RangePatternTVCell.xib in Resources */,
+				5271AFD92B80693B0056EEE2 /* TitleTVCell.xib in Resources */,
+				5271AFCF2B8068D50056EEE2 /* OccassionDesignTVCell.xib in Resources */,
+				5271AFA32B7F8A7F0056EEE2 /* SliderImagesCVCell.xib in Resources */,
+				5271AFB32B7F8B600056EEE2 /* UnstitchedCVCell.xib in Resources */,
+				52ED14562B7F3D5A00F0B63A /* LaunchScreen.storyboard in Resources */,
+				52EE0FE42B81D4CC00868ADD /* RangePatternBottomTVCell.xib in Resources */,
+				5271AFA92B7F8AF20056EEE2 /* CategoryCVCell.xib in Resources */,
+				677132862B8324FB00AD682F /* HeaderExpandCell.xib in Resources */,
+				5271AFB82B7F8B880056EEE2 /* BoutiqueCVCell.xib in Resources */,
+				52ED14532B7F3D5A00F0B63A /* Assets.xcassets in Resources */,
+				5271AFF92B808A2A0056EEE2 /* HeaderCell.xib in Resources */,
+				5271AFE82B8069D80056EEE2 /* FabricTVCell.xib in Resources */,
+				5271AFED2B806A0A0056EEE2 /* UnstitchedTVCell.xib in Resources */,
+				52D840242B81B9AF003575A5 /* CategoryBottomCell.xib in Resources */,
+				52ED14512B7F3D5800F0B63A /* Main.storyboard in Resources */,
+				52D8404B2B81C64E003575A5 /* FabricBottomTVCell.xib in Resources */,
+				5271AFBF2B7F8CC40056EEE2 /* OccassionDesignCVCell.xib in Resources */,
+				5271AFC42B7F8D310056EEE2 /* CategoryTVCell.xib in Resources */,
+				5271AFD42B8069110056EEE2 /* SliderImageTVCell.xib in Resources */,
+				5271AFAE2B7F8B280056EEE2 /* FabricAndRangePatternCVCell.xib in Resources */,
+				5271AF9D2B7F8A210056EEE2 /* TitleCVCell.xib in Resources */,
+				5271AFE32B8069B50056EEE2 /* CategoryCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7B4EBE62103FE932722249FD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ClothsApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE49FAE0624FC5D8AE81CC1D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ClothsApp/Pods-ClothsApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ClothsApp/Pods-ClothsApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ClothsApp/Pods-ClothsApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		52ED14422B7F3D5800F0B63A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				677132822B831EBC00AD682F /* CategoryViewController.swift in Sources */,
+				5271AF912B7F61B90056EEE2 /* APIManager.swift in Sources */,
+				5271AFFC2B80A82C0056EEE2 /* CardView.swift in Sources */,
+				52EE0FE82B82345100868ADD /* SubCategoryTVCell.swift in Sources */,
+				677132852B8324FB00AD682F /* HeaderExpandCell.swift in Sources */,
+				5271AFB72B7F8B880056EEE2 /* BoutiqueCVCell.swift in Sources */,
+				5271AFF82B808A2A0056EEE2 /* HeaderCell.swift in Sources */,
+				5271AFCE2B8068D50056EEE2 /* OccassionDesignTVCell.swift in Sources */,
+				52D840252B81B9AF003575A5 /* CategoryBottomCell.swift in Sources */,
+				52ED144E2B7F3D5800F0B63A /* HomeViewController.swift in Sources */,
+				5271AF892B7F60B00056EEE2 /* TopRepository.swift in Sources */,
+				5271AF8D2B7F611D0056EEE2 /* BottomRepository.swift in Sources */,
+				5271AFEC2B806A0A0056EEE2 /* UnstitchedTVCell.swift in Sources */,
+				5271AFE72B8069D80056EEE2 /* FabricTVCell.swift in Sources */,
+				52ED144A2B7F3D5800F0B63A /* AppDelegate.swift in Sources */,
+				5271AF8F2B7F61740056EEE2 /* CategoryRepository.swift in Sources */,
+				5271AFD82B80693B0056EEE2 /* TitleTVCell.swift in Sources */,
+				5271AFA82B7F8AF20056EEE2 /* CategoryCVCell.swift in Sources */,
+				5271AFD32B8069110056EEE2 /* SliderImageTVCell.swift in Sources */,
+				5271AFC32B7F8D310056EEE2 /* CategoryTVCell.swift in Sources */,
+				5271AFDD2B8069830056EEE2 /* RangePatternTVCell.swift in Sources */,
+				52ED144C2B7F3D5800F0B63A /* SceneDelegate.swift in Sources */,
+				5271AF9C2B7F8A210056EEE2 /* TitleCVCell.swift in Sources */,
+				523A52982B83994500BF78E1 /* NavigationBar.swift in Sources */,
+				5271AFA22B7F8A7F0056EEE2 /* SliderImagesCVCell.swift in Sources */,
+				5271AFBE2B7F8CC40056EEE2 /* OccassionDesignCVCell.swift in Sources */,
+				52D840202B81B789003575A5 /* UIColorExtension.swift in Sources */,
+				52EE0FE32B81D4CC00868ADD /* RangePatternBottomTVCell.swift in Sources */,
+				677132892B832A4F00AD682F /* ExpandTableCell.swift in Sources */,
+				52D8404A2B81C64E003575A5 /* FabricBottomTVCell.swift in Sources */,
+				5271AFB22B7F8B600056EEE2 /* UnstitchedCVCell.swift in Sources */,
+				5271AF8B2B7F60D70056EEE2 /* MiddleRepository.swift in Sources */,
+				52D840272B81BB15003575A5 /* ArrayExtension.swift in Sources */,
+				5271AFAD2B7F8B280056EEE2 /* FabricAndRangePatternCVCell.swift in Sources */,
+				5271AFF12B806A260056EEE2 /* BoutiqueTVCell.swift in Sources */,
+				5271AFE22B8069B50056EEE2 /* CategoryCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		52ED144F2B7F3D5800F0B63A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52ED14502B7F3D5800F0B63A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		52ED14542B7F3D5A00F0B63A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52ED14552B7F3D5A00F0B63A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		52ED14582B7F3D5A00F0B63A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		52ED14592B7F3D5A00F0B63A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		52ED145B2B7F3D5A00F0B63A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67BD50CE26B23CE87A5EBA8A /* Pods-ClothsApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ClothsApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.test.ClothsApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		52ED145C2B7F3D5A00F0B63A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3658A52C458213845C22339E /* Pods-ClothsApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ClothsApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.test.ClothsApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		52ED14412B7F3D5800F0B63A /* Build configuration list for PBXProject "ClothsApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52ED14582B7F3D5A00F0B63A /* Debug */,
+				52ED14592B7F3D5A00F0B63A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52ED145A2B7F3D5A00F0B63A /* Build configuration list for PBXNativeTarget "ClothsApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52ED145B2B7F3D5A00F0B63A /* Debug */,
+				52ED145C2B7F3D5A00F0B63A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 52ED143E2B7F3D5800F0B63A /* Project object */;
+}

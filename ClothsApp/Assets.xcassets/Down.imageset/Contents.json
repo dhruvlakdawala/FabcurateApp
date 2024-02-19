@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "arrow-down-sign-to-navigate-16x16.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "arrow-down-sign-to-navigate-32x32.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "arrow-down-sign-to-navigate-64x64.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

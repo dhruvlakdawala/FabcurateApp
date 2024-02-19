@@ -1,0 +1,20 @@
+PODS:
+  - Alamofire (5.8.1)
+  - ExpyTableView (1.2.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - ExpyTableView
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - ExpyTableView
+
+SPEC CHECKSUMS:
+  Alamofire: 3ca42e259043ee0dc5c0cdd76c4bc568b8e42af7
+  ExpyTableView: 19cf224c2ff04b1ec215ec52bc4ba6f81fa809ed
+
+PODFILE CHECKSUM: 965e9b55080f8531ed5c0e4aa68b4aef0a5905e4
+
+COCOAPODS: 1.15.2
