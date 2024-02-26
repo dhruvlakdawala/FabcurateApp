@@ -11,7 +11,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NavigationBar" customModule="ClothsApp" customModuleProvider="target">
             <connections>
+                <outlet property="leftBackButton" destination="O2v-Fu-W2c" id="kqK-ky-mnU"/>
                 <outlet property="leftButton" destination="unR-Ml-tWu" id="ZvL-cz-0O0"/>
+                <outlet property="nslcBtnBackWidth" destination="XAj-lv-6Yg" id="6JB-Fj-NcQ"/>
                 <outlet property="rightFirstButton" destination="1pZ-C9-GhD" id="wYg-bM-9oa"/>
                 <outlet property="rightSecondButton" destination="QFB-fL-7aq" id="oKg-fF-w8g"/>
                 <outlet property="titleLabel" destination="shB-5G-YQw" id="S4M-IG-KQv"/>
@@ -24,10 +26,10 @@
             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="unR-Ml-tWu">
-                    <rect key="frame" x="5" y="0.0" width="200" height="47"/>
+                    <rect key="frame" x="50" y="0.0" width="200" height="47"/>
                     <accessibility key="accessibilityConfiguration" identifier="topBarNavigation_backBtn"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="200" id="FWN-OJ-XcZ"/>
+                        <constraint firstAttribute="width" constant="200" id="frL-pv-Vj0"/>
                     </constraints>
                     <state key="normal" image="NavigationLeft"/>
                 </button>
@@ -69,18 +71,31 @@
                         </imageReference>
                     </state>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O2v-Fu-W2c">
+                    <rect key="frame" x="0.0" y="0.0" width="50" height="47"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="XAj-lv-6Yg"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="Back">
+                        <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </buttonConfiguration>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="wpF-P1-aoN"/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
+                <constraint firstItem="unR-Ml-tWu" firstAttribute="leading" secondItem="O2v-Fu-W2c" secondAttribute="trailing" id="290-px-mpP"/>
                 <constraint firstItem="QFB-fL-7aq" firstAttribute="top" secondItem="AB3-JX-r91" secondAttribute="top" id="75i-aU-R99"/>
+                <constraint firstItem="O2v-Fu-W2c" firstAttribute="top" secondItem="unR-Ml-tWu" secondAttribute="top" id="8Vt-Zk-rA5"/>
                 <constraint firstAttribute="trailing" secondItem="QFB-fL-7aq" secondAttribute="trailing" id="9zr-HC-OgQ"/>
                 <constraint firstItem="QFB-fL-7aq" firstAttribute="centerY" secondItem="unR-Ml-tWu" secondAttribute="centerY" id="Dwp-OG-3fz"/>
-                <constraint firstItem="unR-Ml-tWu" firstAttribute="leading" secondItem="AB3-JX-r91" secondAttribute="leading" constant="5" id="REc-ve-M2e"/>
+                <constraint firstItem="O2v-Fu-W2c" firstAttribute="bottom" secondItem="unR-Ml-tWu" secondAttribute="bottom" id="M1j-3Q-MH7"/>
                 <constraint firstItem="shB-5G-YQw" firstAttribute="top" relation="greaterThanOrEqual" secondItem="AB3-JX-r91" secondAttribute="top" constant="12" id="UGf-qM-psF"/>
                 <constraint firstItem="shB-5G-YQw" firstAttribute="centerX" secondItem="wpF-P1-aoN" secondAttribute="centerX" id="XcI-NN-oO4"/>
                 <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="shB-5G-YQw" secondAttribute="bottom" constant="12" id="arD-aA-pBI"/>
                 <constraint firstItem="1pZ-C9-GhD" firstAttribute="centerY" secondItem="unR-Ml-tWu" secondAttribute="centerY" id="fwf-p1-DYk"/>
+                <constraint firstItem="O2v-Fu-W2c" firstAttribute="leading" secondItem="wpF-P1-aoN" secondAttribute="leading" id="gzS-iT-AfX"/>
                 <constraint firstItem="1pZ-C9-GhD" firstAttribute="top" secondItem="AB3-JX-r91" secondAttribute="top" id="hRM-cM-PE6"/>
                 <constraint firstAttribute="bottom" secondItem="1pZ-C9-GhD" secondAttribute="bottom" id="hU4-0W-K76"/>
                 <constraint firstItem="QFB-fL-7aq" firstAttribute="leading" secondItem="1pZ-C9-GhD" secondAttribute="trailing" id="jgP-4g-CIq"/>
@@ -96,6 +111,7 @@
         </view>
     </objects>
     <resources>
+        <image name="Back" width="16" height="16"/>
         <image name="NavigationLeft" width="411" height="123"/>
         <image name="bag" catalog="system" width="128" height="128"/>
         <image name="magnifyingglass" catalog="system" width="128" height="117"/>

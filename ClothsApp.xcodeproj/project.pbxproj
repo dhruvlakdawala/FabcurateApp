@@ -50,6 +50,8 @@
 		5271AFF82B808A2A0056EEE2 /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5271AFF62B808A2A0056EEE2 /* HeaderCell.swift */; };
 		5271AFF92B808A2A0056EEE2 /* HeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5271AFF72B808A2A0056EEE2 /* HeaderCell.xib */; };
 		5271AFFC2B80A82C0056EEE2 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5271AFFB2B80A82C0056EEE2 /* CardView.swift */; };
+		527AC5B32B89C3F800D81E93 /* HeaderExpandCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 527AC5B12B89C3F800D81E93 /* HeaderExpandCell1.xib */; };
+		527AC5B42B89C3F800D81E93 /* HeaderExpandCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527AC5B22B89C3F800D81E93 /* HeaderExpandCell1.swift */; };
 		52D840202B81B789003575A5 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D8401F2B81B789003575A5 /* UIColorExtension.swift */; };
 		52D840242B81B9AF003575A5 /* CategoryBottomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52D840222B81B9AF003575A5 /* CategoryBottomCell.xib */; };
 		52D840252B81B9AF003575A5 /* CategoryBottomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D840232B81B9AF003575A5 /* CategoryBottomCell.swift */; };
@@ -118,6 +120,8 @@
 		5271AFF62B808A2A0056EEE2 /* HeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
 		5271AFF72B808A2A0056EEE2 /* HeaderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderCell.xib; sourceTree = "<group>"; };
 		5271AFFB2B80A82C0056EEE2 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		527AC5B12B89C3F800D81E93 /* HeaderExpandCell1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderExpandCell1.xib; sourceTree = "<group>"; };
+		527AC5B22B89C3F800D81E93 /* HeaderExpandCell1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderExpandCell1.swift; sourceTree = "<group>"; };
 		52D8401F2B81B789003575A5 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		52D840222B81B9AF003575A5 /* CategoryBottomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CategoryBottomCell.xib; sourceTree = "<group>"; };
 		52D840232B81B9AF003575A5 /* CategoryBottomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryBottomCell.swift; sourceTree = "<group>"; };
@@ -476,6 +480,15 @@
 			path = CustomUIClass;
 			sourceTree = "<group>";
 		};
+		527AC5B02B89C3F800D81E93 /* HeaderExpandCell1 */ = {
+			isa = PBXGroup;
+			children = (
+				527AC5B12B89C3F800D81E93 /* HeaderExpandCell1.xib */,
+				527AC5B22B89C3F800D81E93 /* HeaderExpandCell1.swift */,
+			);
+			path = HeaderExpandCell1;
+			sourceTree = "<group>";
+		};
 		52D8401E2B81B768003575A5 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -506,6 +519,7 @@
 		52E929C72B83518500DC3FEC /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				527AC5B02B89C3F800D81E93 /* HeaderExpandCell1 */,
 				52E929C82B83519900DC3FEC /* HeaderExpandCell */,
 				52E929C92B8351AD00DC3FEC /* ExpandTableCell */,
 			);
@@ -682,6 +696,7 @@
 				5271AFBF2B7F8CC40056EEE2 /* OccassionDesignCVCell.xib in Resources */,
 				5271AFC42B7F8D310056EEE2 /* CategoryTVCell.xib in Resources */,
 				5271AFD42B8069110056EEE2 /* SliderImageTVCell.xib in Resources */,
+				527AC5B32B89C3F800D81E93 /* HeaderExpandCell1.xib in Resources */,
 				5271AFAE2B7F8B280056EEE2 /* FabricAndRangePatternCVCell.xib in Resources */,
 				5271AF9D2B7F8A210056EEE2 /* TitleCVCell.xib in Resources */,
 				5271AFE32B8069B50056EEE2 /* CategoryCell.xib in Resources */,
@@ -756,6 +771,7 @@
 				5271AFD82B80693B0056EEE2 /* TitleTVCell.swift in Sources */,
 				5271AFA82B7F8AF20056EEE2 /* CategoryCVCell.swift in Sources */,
 				5271AFD32B8069110056EEE2 /* SliderImageTVCell.swift in Sources */,
+				527AC5B42B89C3F800D81E93 /* HeaderExpandCell1.swift in Sources */,
 				5271AFC32B7F8D310056EEE2 /* CategoryTVCell.swift in Sources */,
 				5271AFDD2B8069830056EEE2 /* RangePatternTVCell.swift in Sources */,
 				52ED144C2B7F3D5800F0B63A /* SceneDelegate.swift in Sources */,

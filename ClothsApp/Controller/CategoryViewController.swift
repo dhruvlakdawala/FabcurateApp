@@ -25,11 +25,13 @@ class CategoryViewController: UIViewController, ExpyTableViewDataSource, ExpyTab
     func initialSetup(){
         self.customNavigationBar.leftButton.isHidden = true
         self.customNavigationBar.titleLabel.text = "Category"
+        self.customNavigationBar.leftBackButton.isHidden = false
+        self.customNavigationBar.nslcBtnBackWidth.constant = 50
         
         self.tvExpandableCategory.dataSource = self
         self.tvExpandableCategory.delegate = self
         
-        self.tvExpandableCategory.register(UINib(nibName: "HeaderExpandCell", bundle: nil), forCellReuseIdentifier: "HeaderExpandCell")
+        self.tvExpandableCategory.register(UINib(nibName: "HeaderExpandCell1", bundle: nil), forCellReuseIdentifier: "HeaderExpandCell1")
         self.tvExpandableCategory.register(UINib(nibName: "ExpandTableCell", bundle: nil), forCellReuseIdentifier: "ExpandTableCell")
     }
     
@@ -45,17 +47,23 @@ class CategoryViewController: UIViewController, ExpyTableViewDataSource, ExpyTab
     }
     
     func tableView(_ tableView: ExpyTableView, expandableCellForSection section: Int) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: "HeaderExpandCell")) as! HeaderExpandCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: "HeaderExpandCell1")) as! HeaderExpandCell1
         
         cell.lblCatgoryName.text = "\(arrCategories?[section].categoryName ?? "")"
         if section % 2 == 1 {
             cell.vwContainer.backgroundColor = UIColor(hex: "#8FE0F4")
-            cell.vwCategory.backgroundColor = UIColor(hex: "#8FE0F4")
+            cell.vwCategory.backgroundColor = UIColor(hex: "#8FEEF4")
             cell.lblCatgoryName.backgroundColor = UIColor(hex: "#8FE0F4")
+            cell.vwCategoryName.backgroundColor = UIColor(hex: "#8FE0F4")
+            cell.vwTrailingImage.backgroundColor = UIColor(hex: "#8FEEF4")
+            cell.imgCategoryImage.image = UIImage(named: "Image3")
         }else{
             cell.vwContainer.backgroundColor = UIColor(hex: "#E3A186")
-            cell.vwCategory.backgroundColor = UIColor(hex: "#E3A186")
+            cell.vwCategory.backgroundColor = UIColor(hex: "#E3B486")
             cell.lblCatgoryName.backgroundColor = UIColor(hex: "#E3A186")
+            cell.vwCategoryName.backgroundColor = UIColor(hex: "#E3A186")
+            cell.vwTrailingImage.backgroundColor = UIColor(hex: "#E3B486")
+            cell.imgCategoryImage.image = UIImage(named: "Image5")
         }
         return cell
     }

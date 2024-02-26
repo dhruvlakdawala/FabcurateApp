@@ -69,6 +69,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="HxH-PE-ESl" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kwF-ee-f0L">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" systemColor="systemGreenColor"/>
@@ -136,16 +137,16 @@
                                         </constraints>
                                     </view>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="p4X-cx-9da" customClass="ExpyTableView" customModule="ExpyTableView">
-                                        <rect key="frame" x="5" y="60" width="365" height="553"/>
+                                        <rect key="frame" x="0.0" y="60" width="375" height="553"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     </tableView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="p4X-cx-9da" secondAttribute="trailing" constant="5" id="77j-63-EPI"/>
+                                    <constraint firstAttribute="trailing" secondItem="p4X-cx-9da" secondAttribute="trailing" id="77j-63-EPI"/>
                                     <constraint firstAttribute="bottom" secondItem="p4X-cx-9da" secondAttribute="bottom" constant="5" id="BM7-br-UH2"/>
                                     <constraint firstItem="p4X-cx-9da" firstAttribute="top" secondItem="zEa-h0-Lvq" secondAttribute="bottom" constant="10" id="QG2-eg-F1Y"/>
-                                    <constraint firstItem="p4X-cx-9da" firstAttribute="leading" secondItem="YAs-Xb-BLK" secondAttribute="leading" constant="5" id="Z8J-V1-wft"/>
+                                    <constraint firstItem="p4X-cx-9da" firstAttribute="leading" secondItem="YAs-Xb-BLK" secondAttribute="leading" id="Z8J-V1-wft"/>
                                     <constraint firstAttribute="trailing" secondItem="zEa-h0-Lvq" secondAttribute="trailing" id="gcm-kX-3bZ"/>
                                     <constraint firstItem="zEa-h0-Lvq" firstAttribute="top" secondItem="YAs-Xb-BLK" secondAttribute="top" id="iuL-Vw-cJ9"/>
                                     <constraint firstItem="zEa-h0-Lvq" firstAttribute="leading" secondItem="YAs-Xb-BLK" secondAttribute="leading" id="paB-XA-gd0"/>

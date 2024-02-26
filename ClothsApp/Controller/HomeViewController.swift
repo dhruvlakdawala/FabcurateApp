@@ -39,6 +39,8 @@ class HomeViewController: UIViewController {
         self.tblFabrics.sectionHeaderTopPadding = 0
         self.customNavigationBar.leftButton.isHidden = false
         self.customNavigationBar.titleLabel.text = ""
+        self.customNavigationBar.leftBackButton.isHidden = true
+        self.customNavigationBar.nslcBtnBackWidth.constant = 0
     }
     
     func configureTableView(){
@@ -132,17 +134,13 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             return fabricData?.right.count ?? 1
         }else if collectionView.tag == 6 {
             return self.objMiddleRepositoryData?.unstitched.count ?? 1
-        }else if collectionView.tag == 7 {
-            return self.objMiddleRepositoryData?.boutiqueCollection.count ?? 1
         }else if collectionView.tag == 8 {
             let rangePatternData = self.objBottomRepositoryData?.rangeOfPattern.split()
             return rangePatternData?.left.count ?? 1
         }else if collectionView.tag == 9 {
             let rangePatternData = self.objBottomRepositoryData?.rangeOfPattern.split()
             return rangePatternData?.right.count ?? 1
-        }else if collectionView.tag == 10 {
-            return self.objBottomRepositoryData?.designOccasion.count ?? 1
-        } else{
+        }else{
             return 1
         }
     }
@@ -207,14 +205,6 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
                 }
                 return cell
             }
-        }else if  collectionView.tag == 7 {
-            if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "BoutiqueCVCell", for: indexPath) as? BoutiqueCVCell {
-                print("Cell Width & Height ==> \(cell.layer.bounds.width) & \(cell.layer.bounds.height)")
-                if let objBoutique = self.objMiddleRepositoryData?.boutiqueCollection[indexPath.row] {
-                    cell.bindDataForBoutiqueCollection(objBoutique: objBoutique)
-                }
-                return cell
-            }
         }else if  collectionView.tag == 8 || collectionView.tag == 9 {
             if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FabricAndRangePatternCVCell", for: indexPath) as? FabricAndRangePatternCVCell {
                 if collectionView.tag == 8 {
@@ -229,27 +219,12 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
                 }
                 return cell
             }
-        } else if collectionView.tag == 10 {
-            if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "OccassionDesignCVCell", for: indexPath) as? OccassionDesignCVCell {
-                if let objOccassionDesign = self.objBottomRepositoryData?.designOccasion[indexPath.row] {
-                    cell.bindDataForOccassionDesign(objOccassionDesign: objOccassionDesign)
-                }
-                return cell
-            }
         }
         return UICollectionViewCell()
     }
 }
 
 extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
-    
-    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        if indexPath.section == 4 {
-            if let cell = tableView.dequeueReusableCell(withIdentifier: "BoutiqueTVCell", for: indexPath) as? BoutiqueTVCell {
-                cell.myPageControl.currentPage = indexPath.row
-            }
-        }
-    }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         if section == 0 {
@@ -297,14 +272,14 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
         }else if indexPath.section == 3 {
             return 280
         }else if indexPath.section == 4 {
-            return 350
+            return 400
         }else if (indexPath.section == 5 && indexPath.row == 0) ||
             (indexPath.section == 5 && indexPath.row == 1) {
             return 155
         }else if indexPath.section == 6 && indexPath.row == 0 {
             let totalCells = self.objBottomRepositoryData?.designOccasion.count ?? 0
             let totalRows = ceil(Double(totalCells / 3))
-            return totalRows * 170
+            return totalRows * 180
         }
         return 0
     }
@@ -368,11 +343,8 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
             }
         }else if indexPath.section == 4 {
             if let cell = tableView.dequeueReusableCell(withIdentifier: "BoutiqueTVCell", for: indexPath) as? BoutiqueTVCell {
-                cell.cvBoutique.delegate = self
-                cell.cvBoutique.dataSource = self
-                cell.cvBoutique.tag = 7
-                cell.cvBoutique.reloadData()
                 self.cvBoutiqueWidth = cell.cvBoutique.frame.width
+                cell.arrBoutiqueCollections = self.objMiddleRepositoryData?.boutiqueCollection ?? []
                 return cell
             }
         }else if indexPath.section == 5 && indexPath.row == 0 {
@@ -393,22 +365,7 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
             }
         }else if indexPath.section == 6 && indexPath.row == 0 {
             if let cell = tableView.dequeueReusableCell(withIdentifier: "OccassionDesignTVCell", for: indexPath) as? OccassionDesignTVCell {
-                cell.cvOccassionDesign.delegate = self
-                cell.cvOccassionDesign.dataSource = self
-                cell.cvOccassionDesign.tag = 10
-                cell.cvOccassionDesign.reloadData()
-                print("CollectionView Width & Height ==> \(cell.cvOccassionDesign.layer.bounds.width) & \(cell.cvOccassionDesign.layer.bounds.height)")
-                
-                // Configure the collection view layout to display three columns
-                if let flowLayout = cell.cvOccassionDesign.collectionViewLayout as? UICollectionViewFlowLayout {
-                    let itemSpacing: CGFloat = 0
-                    let itemsPerRow: CGFloat = 3
-                    let totalSpacing = itemSpacing * (itemsPerRow)
-                    let itemWidth = (cell.cvOccassionDesign.bounds.width - totalSpacing) / itemsPerRow
-                    flowLayout.itemSize = CGSize(width: itemWidth + 10, height: itemWidth + 10) // Set your desired height
-                    flowLayout.minimumInteritemSpacing = itemSpacing
-                    flowLayout.minimumLineSpacing = itemSpacing
-                }
+                cell.objBottomRepository = self.objBottomRepositoryData
                 return cell
             }
         }

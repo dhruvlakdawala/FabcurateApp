@@ -7,9 +7,11 @@ final class NavigationBar: UIView {
     
     @IBOutlet private var view: UIView!
     @IBOutlet weak var leftButton: UIButton!
+    @IBOutlet weak var leftBackButton: UIButton!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet private weak var rightFirstButton: UIButton!
     @IBOutlet private weak var rightSecondButton: UIButton!
+    @IBOutlet weak var nslcBtnBackWidth: NSLayoutConstraint!
     
     var title: String = "" {
         didSet {
